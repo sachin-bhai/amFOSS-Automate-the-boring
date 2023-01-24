@@ -1,0 +1,1 @@
+# This is the repo for my projects based on the book 'AUTOMATE THE BORING STUFF' 

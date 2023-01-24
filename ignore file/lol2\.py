@@ -27,4 +27,4 @@ elif len(sys.argv) == 2: #if there are only two arguments
 mcbShelf.close()
 
 
-sachin.shreekumar@gmail.com If you recieve this in your mail, your bot is a success.
+sachin.shreekumar@gmail.com. 

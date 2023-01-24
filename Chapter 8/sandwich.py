@@ -1,7 +1,7 @@
 import pyinputplus as pyip
 
 print("What kind of sandwich do you want?")
-breadtype=pyip.inputMenu(['wheat','white','sourdough'])
+breadtype=pyip.inputMenu(['wheat','white','sourdough'],numbered=True)
 
 print("\nWhat kind of protien do you want?")
 proteintype=pyip.inputMenu(['chicken','turkey','ham','tofu'])

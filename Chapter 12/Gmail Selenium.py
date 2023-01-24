@@ -50,32 +50,32 @@ next_second.click()
 time.sleep(10)
 
 
-browser.get("https://mail.google.com/mail/u/0/#inbox")
+browser.get("https://mail.google.com/mail/u/0/h/5ur9xnsmhsye/")
 
 time.sleep(10)
 
-compose=browser.find_element(By.XPATH,'/html/body/div[7]/div[3]/div/div[2]/div[1]/div[1]/div/div')
+compose=browser.find_element(By.XPATH,'/html/body/table[2]/tbody/tr/td[1]/table[1]/tbody/tr[1]/td/b/a')
 compose.click()
 
 browser.implicitly_wait(7)
 
-mail_to=browser.find_element(By.ID,':80')
-mail_to.send_keys('username')
+mail_to=browser.find_element('xpath','//*[@id="to"]')
+mail_to.send_keys(username)
 browser.implicitly_wait(5)
 mail_to.send_keys(Keys.RETURN)
 
 browser.implicitly_wait(2)
 
-mail_sub=browser.find_element(By.ID,':70')
+mail_sub=browser.find_element('xpath','/html/body/table[2]/tbody/tr/td[2]/table[1]/tbody/tr/td[2]/form/table[2]/tbody/tr[4]/td[2]/input')
 mail_sub.send_keys('This is automated')
 browser.implicitly_wait(5)
 
-mail_content=browser.find_element(By.ID,':5r')
+mail_content=browser.find_element('xpath','/html/body/table[2]/tbody/tr/td[2]/table[1]/tbody/tr/td[2]/form/table[2]/tbody/tr[8]/td[2]/textarea')
 browser.implicitly_wait(3)
 mail_content.send_keys(email_content)
 browser.implicitly_wait(5)
 
-mail_send=browser.find_element(By.ID,':7a')
+mail_send=browser.find_element('xpath','/html/body/table[2]/tbody/tr/td[2]/table[1]/tbody/tr/td[2]/form/table[3]/tbody/tr/td/input[1]')
 browser.implicitly_wait(2)
 mail_send.click()
 print("Done")

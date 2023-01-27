@@ -2,8 +2,6 @@ import openpyxl
 from openpyxl.utils import get_column_letter
 
 
-
-lists=['file.txt','file2.txt']
 wb=openpyxl.load_workbook('Chapter 13/example.xlsx')
 
 sheet=wb.active
@@ -18,14 +16,18 @@ for i in range(1,c+1):
         info=get_column_letter(i)+str(k)
         text=sheet[info].value
         texts[i-1].append(text)
+print(text1)
+print(text2)
 
-for l in range(len(lists)):
-    f= open(lists[l],"w")
-    for i in texts:
-        for k in i:
-            f.write(str(k))
-        f.close
+file1=open('file.txt','w')
+for i in text1:
+    file1.write(str(i)+" ")
+file1.close()
 
+file2=open('file2.txt','w')
+for i in text2:
+    file2.write(str(i)+" ")
+file2.close()
 
 
 

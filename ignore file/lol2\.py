@@ -1,6 +1,3 @@
-#! python3
-# mcb.py - A multi-clipboard program.
-
 import pyperclip, sys, shelve
 
 mcbShelf = shelve.open('mcb')
@@ -27,4 +24,5 @@ elif len(sys.argv) == 2: #if there are only two arguments
 mcbShelf.close()
 
 
-sachin.shreekumar@gmail.com. 
+sachin.shreekumar@gmail.com Dear Sachin
+This email was sent by an automated system designed by you.

@@ -17,7 +17,7 @@ for i in aElems:
         pic='https:'+str(pic)
         hrefs.append(pic)
 
-print(hrefs)
+# print(hrefs)
 
 for j in hrefs:
     try:

@@ -1,7 +1,7 @@
 import pyinputplus as pyip
 
 print("What kind of sandwich do you want?")
-breadtype=pyip.inputMenu(['wheat','white','sourdough'],numbered=True)
+breadtype=pyip.inputMenu(['wheat','white','sourdough'])
 
 print("\nWhat kind of protien do you want?")
 proteintype=pyip.inputMenu(['chicken','turkey','ham','tofu'])
@@ -10,7 +10,7 @@ print("\nDo you need cheese?")
 cheese=pyip.inputYesNo()
 print(cheese)
 if cheese.lower()=='yes':
-        print("\nWhaa kind of cheese?")
+        print("\nWhat kind of cheese?")
         cheese=pyip.inputMenu(['Cheddar','Swiss','Mozzarella'])
 
 print("\nDo you want mayo,mustard,lettuce or tomato?")

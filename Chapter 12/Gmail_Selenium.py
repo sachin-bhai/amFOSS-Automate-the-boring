@@ -1,7 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-import pyperclip,re,sys,os,time
+import pyperclip,re,time,sys
+
+
+# copy the required string and run the file in the terminal
 
 def emailaddress(inp):
     email=re.compile(r'''(
@@ -20,6 +23,10 @@ def contents(email,strings):
     strings=strings.strip()
     pyperclip.copy(strings)
 
+if len(sys.argv) > 1:
+    text = ' '.join(sys.argv[1:])
+else:
+    text= pyperclip.paste()
 
 text=pyperclip.paste()
 emailaddress(text)

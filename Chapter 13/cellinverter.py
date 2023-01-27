@@ -1,5 +1,6 @@
+
 import openpyxl
-from openpyxl.utils import get_column_letter, column_index_from_string
+from openpyxl.utils import get_column_letter
 wb=openpyxl.load_workbook('Chapter 13/example.xlsx')
 sheet=wb.active
 row1=[]
@@ -31,8 +32,7 @@ for a in range(1,colmax+1):
             (sheet[r2]).value=row2[b-1]
 
 
-wb.save('cell_inverter.xlsx')
-        
+wb.save('cell_inverter.xlsx')        
 
 
 

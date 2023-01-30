@@ -1,5 +1,4 @@
 import requests, bs4, os
-from selenium import webdriver
 os.makedirs('flikr',exist_ok=True)
 search='eminem'
 res=requests.get('https://flickr.com/search/?text='+search)

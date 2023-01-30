@@ -24,5 +24,8 @@ elif len(sys.argv) == 2: #if there are only two arguments
 mcbShelf.close()
 
 
-sachin.shreekumar@gmail.com Dear Sachin
-This email was sent by an automated system designed by you.
+sachin.shreekumar@gmail.com
+The write() method takes a regular File object that has been opened in write-binary mode. You can get such a File object by calling Python’s open() function with two arguments: the string of what you want the PDF’s filename to be and 'wb' to indicate the file should be opened in write-binary mode.
+
+If this sounds a little confusing, don’t worry—you’ll see how this works in the following code examples.
+
